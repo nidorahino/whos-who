@@ -1,0 +1,10 @@
+<app-sidebar></app-sidebar>
+<div class="leaderboard-container">
+    <div class="header">
+        <h1 class="title">Leaderboard</h1>
+    </div>
+    <div class="leaders-container">
+        <app-leaderboard-user class="leaderboard-item" *ngFor="let userResult of userResultsArray" [result]="userResult" [place]="userResultsArray.indexOf(userResult) + 1"></app-leaderboard-user>
+    </div>
+    <div class="filler-div" *ngIf="userResultsArray.length < 3"></div>
+</div>

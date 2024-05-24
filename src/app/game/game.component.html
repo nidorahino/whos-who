@@ -1,0 +1,14 @@
+<div class="container">
+  <div *ngIf="authLoading || configLoading" class="loading-container">
+    <p>Loading...</p>
+  </div>  
+
+  <div class="track-container">
+    <app-track *ngIf="currentTrackIndex < tracks.length" [track]="tracks[currentTrackIndex]" [gameMode]="currentConfigs.selectedGameMode" (nextTrack)="checkForCorrectTrack($event)"></app-track>
+  </div>
+
+  <div id="scoreboard" class="scoreboard">
+    <h1>SCORE:</h1>
+    <h2>{{ score }}</h2>
+  </div>
+</div>

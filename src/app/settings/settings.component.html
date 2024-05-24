@@ -1,0 +1,38 @@
+<app-sidebar></app-sidebar>
+
+<div class="settings-container">
+  <div class="settings-content">
+    <h1 class="header">Settings</h1>
+    <div class="select-wrapper">
+      Genre:
+      <select [(ngModel)]="selectedGenre" (ngModelChange)="setGenre($event)">
+        <option [value]="genre" *ngFor="let genre of genres">{{ genre }}</option>
+      </select>
+    </div>
+
+    <div class="select-wrapper">
+      How Many Questions?
+      <select [(ngModel)]="selectedNumQuestions" (ngModelChange)="setNumQuestions($event)">
+        <option [value]="numQuestion" *ngFor="let numQuestion of numQuestions">{{ numQuestion }}</option>
+      </select>
+    </div>
+
+    <div class="select-wrapper">
+      How Many Answers?
+      <select [(ngModel)]="selectedNumAnswers" (ngModelChange)="setNumAnswers($event)">
+        <option [value]="numAnswer" *ngFor="let numAnswer of numAnswers">{{ numAnswer }}</option>
+      </select>
+    </div>
+
+    <div class="select-wrapper">
+      Game Mode:
+      <select [(ngModel)]="selectedGameMode" (ngModelChange)="setGameMode($event)">
+        <option [value]="gameMode" *ngFor="let gameMode of gameModes">{{ gameMode }}</option>
+      </select>
+    </div>
+  </div>
+  <div class="button-div">
+    <button class="button" (click)="onSave()">Save</button>
+    <button class="button" *ngIf="showPlayButton" (click)="playGame()">Play Game</button>
+  </div>
+</div>

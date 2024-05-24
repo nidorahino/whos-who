@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Game Over</h1>
+    <h2 *ngIf="onePoint">You Scored {{ userScore }} point!</h2>
+    <h2 *ngIf="!onePoint">You Scored {{ userScore }} points!</h2>
+    <div class="name-input">
+        <h3>Please enter your name below to view the leaderboard</h3>
+        <input (keyup)="setUserInput($event)" id="name" placeholder="Name"/>
+    </div>
+    <button (click)="submitNameToLeaderboard()">Submit Name</button>
+    <p *ngIf="inputError" class="input-error">Please provide a name of at least 2 characters</p>
+</div>

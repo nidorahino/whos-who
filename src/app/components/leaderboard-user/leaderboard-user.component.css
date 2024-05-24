@@ -1,0 +1,149 @@
+.container {
+    background-color: #494949;
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    box-shadow: 2px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.container1 {
+    background: linear-gradient(to bottom, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+    width: 100%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 2px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.container2 {
+    background: linear-gradient(to bottom, #ebf1f6 0%,#badaf0 50%,#a6c9e0 51%,#d5ebfb 100%);
+    width: 100%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 2px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.container3 {
+    background: linear-gradient(to bottom, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%);
+    width: 100%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 2px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.placement-title {
+    margin: 0 0 20px 0;
+    text-decoration: underline;
+}
+
+.game-details {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tag-container {
+    display: flex;
+    align-items: center;
+}
+
+.tag-name {
+    height: 20px;
+    width: 300px;
+    background-color: #E1F1FF;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.points-div {
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.score-div {
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    padding: 5px;
+}
+
+.score-div h1 {
+    margin: 0;
+}
+
+.score-div p {
+    margin: 7px;
+}
+
+.details-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.mode-div {
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    padding: 5px;
+}
+
+.divider {
+    border-left: 3px solid black;
+    border-radius: 5px;
+    height: 200px;
+    margin: 5px 40px 5px 40px;
+}
+
+.leaderboard-button {
+    color: black;
+    background-color: #1ED760;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
+}
+
+.leaderboard-button:hover {
+    background-color: #1da54c;
+}
+
+.leaderboard-button:active {
+    background-color: #20753e;
+}

@@ -1,0 +1,75 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+  background-color: #121212;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+.spotify-logo {
+  width: 100px;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 200px;
+  margin: 0;
+	animation: float 6s ease-in-out infinite;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  width: 15vw;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1DB954;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1ED760;
+}
+
+img {
+  margin: 0;
+}
+
+.spotify-logo, .cooksys-logo {
+  width: 75px;
+  margin: 5px;
+}
+
+.credit-container {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15x;
+}

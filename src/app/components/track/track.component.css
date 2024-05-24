@@ -1,0 +1,104 @@
+.track {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(to bottom, #1ed75f59, #121212);
+    color: #FFFFFF;
+    height: 90vh;
+}
+
+.track-info-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.question-container {
+    padding: 5%;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.track img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.play-button {
+    background-color: #1DB954;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.image-edge {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.image-blur {
+    border: 3px solid black;
+    filter: blur(10px);
+}
+
+.play-button:hover {
+    background-color: #1ED760;
+}
+
+.play-button:focus {
+    outline: none;
+}
+
+.track-info-container h3 {
+    margin: 8px 0;
+    font-size: 32px;
+}
+
+
+.track-info-container p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.options h3 {
+    font-size: 24px;
+}
+
+.option-button {
+    background-color: #1DB954;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    margin: 15px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.option-button:hover {
+    background-color: #1ED760;
+}
+
+.option-button:focus {
+    outline: none;
+}

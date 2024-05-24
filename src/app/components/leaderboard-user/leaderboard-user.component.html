@@ -1,0 +1,22 @@
+<div [ngClass]="className">
+    <h1 class="placement-title">{{ getPlacement() }} place - {{ result.name }}</h1>
+    <div class="game-details">
+        <div class="score-div">
+            <div class="points-div">
+                <h1>{{ result.score }}</h1>
+                <p> points</p>
+            </div>
+            <div class="details-text">{{result.correctAnswers.toString()}} Correct Answers</div>
+            <div class="details-text">{{ (result.config.selectedNumQuestions - result.correctAnswers).toString() }} Wrong Answers</div>
+            <button class="leaderboard-button" (click)="toggleGameSettings()">{{gameSettings}} Game Settings</button>
+        </div>
+        <div *ngIf="gameSettings==='Hide'" class="divider"></div>
+        <div *ngIf="gameSettings==='Hide'" class="mode-div">
+            <app-leaderboard-tag [tagName]="'Game Mode'" [tagValue]="result.config.selectedGameMode"></app-leaderboard-tag>
+            <app-leaderboard-tag [tagName]="'Genre'" [tagValue]="result.config.selectedGenre"></app-leaderboard-tag>
+            <app-leaderboard-tag [tagName]="'Number of Questions'" [tagValue]="result.config.selectedNumQuestions.toString()"></app-leaderboard-tag>
+            <app-leaderboard-tag [tagName]="'Number of Choices'" [tagValue]="result.config.selectedNumAnswers.toString()"></app-leaderboard-tag>
+            <button class="leaderboard-button" (click)="playGame()">Play With These Settings</button>
+        </div>
+    </div>
+</div>

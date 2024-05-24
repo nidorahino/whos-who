@@ -1,0 +1,30 @@
+.sidebar {
+    height: 92vh;
+    width: 195px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 20px;
+    font-size: 22px;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #ccc;
+  }

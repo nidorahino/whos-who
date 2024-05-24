@@ -1,0 +1,27 @@
+<div class="track">
+    <div class="track-info-container">
+        <div class="image-edge"><img class="image-blur" [src]="track.albumImageUrl" alt="Preview Image"></div>
+        <div *ngIf="gameMode === 'Guess the Artist'">
+            <h3>{{ track.songName }}</h3>
+            <p> ? </p>
+        </div>
+        <div *ngIf="gameMode === 'Guess the Song'">
+            <h3> ? </h3>
+            <p>{{ track.artists }}</p>
+        </div>
+        <button class="play-button" *ngIf="!songPlaying" (click)="togglePlay()">Play</button>
+        <button class="play-button" *ngIf="songPlaying" (click)="togglePlay()">Pause</button>
+    </div>
+    
+    <div class="question-container">
+        <div class="options" *ngIf="gameMode === 'Guess the Song'">
+            <h3>What is the name of this song?</h3>
+            <button *ngFor="let songOption of track.songOptions" class="option-button" (click)="selectSong(songOption)">{{ songOption }}</button>
+        </div>
+
+        <div class="options" *ngIf="gameMode === 'Guess the Artist'">
+            <h3>Who are the artists credited for this song?</h3>
+            <button *ngFor="let artistOption of track.artistOptions" class="option-button" (click)="selectArtist(artistOption)">{{ artistOption }}</button>
+        </div>
+    </div>
+</div>

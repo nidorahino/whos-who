@@ -1,0 +1,56 @@
+.settings-container {
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+  color: #FFFFFF;
+}
+
+.header {
+  text-align: center;
+}
+
+.select-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+.button {
+  margin: 0px 40px 0px 40px;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  width: 200px;
+  margin-left: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #1DB954;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1ED760;
+}
